@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="weather-container">
+    <div class="text-center"><h1>Weather Application</h1></div>
+    <div class="input-container mt-3">
+      <form class="input-container">
+        <input
+          type="text"
+          placeholder="Search City Weather"
+          [(ngModel)]="city"
+          name="city"
+        />
+        <button (click)="getWeatherData()" class="btn btn-primary shadow">
+          Search
+        </button>
+      </form>
+    </div>
+    <div class="wdata-container mt-5 text-center" *ngIf="weatherData">
+      <h3>
+        Weather Data for {{ weatherData.name }}<i class="fa-solid fa-cloud m-2"></i>
+      </h3>
+      <p>
+        Country: {{ weatherData.sys.country
+        }}<i class="fa-solid fa-earth-asia m-2"></i>
+      </p>
+      <p>
+        Temperature: {{ weatherData.main.temp | kelvinToCelsius }}&deg;C<i
+          class="fas fa-thermometer-half m-2"
+        ></i>
+      </p>
+      <p>
+        Humidity: {{ weatherData.main.humidity }}%<i
+          class="fa-solid fa-droplet m-2"
+        ></i>
+      </p>
+      <p>
+        Feels Like: {{ weatherData.main.feels_like | kelvinToCelsius }}&deg;C<i
+          class="fas fa-thermometer-half m-2"
+        ></i>
+      </p>
+      <p>
+        Wind Speed: {{ weatherData.wind.speed | windSpeedConverter }}km/h<i
+          class="fa-solid fa-wind m-2"
+        ></i>
+      </p>
+      <p>Description: {{ weatherData.weather[0].description }}</p>
+    </div>
+  </div>
+</div>

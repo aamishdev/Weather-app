@@ -1,0 +1,50 @@
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100vh !important;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/imgs/background4.jpg");
+}
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 550px;
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.wdata-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 550px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 20px;
+}
+.input-container input {
+  width: 320px;
+  height: 40px;
+  border-radius: 2px 0 0 2px;
+  border: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 15px;
+}
+.input-container button {
+  height: 40px;
+  border-radius: 0 2px 2px 0;
+  width: 80px;
+  font-size: 15px;
+}
