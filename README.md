@@ -1,6 +1,6 @@
-# APIcalls
+# Weather-app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+A comprehensive weather application built with Angular is designed to provide real-time weather updates for any location. Users can search for cities and receive weather conditions, including temperature, humidity, wind speed, and more. The application leverages Axios for efficient API key management and data fetching from a weather API, ensuring accurate and up-to-date information. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
 
 ## Development server
 
